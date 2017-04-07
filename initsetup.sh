@@ -2,18 +2,33 @@
 # First manual steps required                                                 #
 ###############################################################################
 # 1. Get rvm at http://rvm.io/
-# 2. Use rvm to install Ruby
-# 3. Install homebrew - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# 1.a. rvm comes with gem, I think.
+# 2. Use rvm to install Ruby: rvm install ruby 2.3.4
+# 3. Install homebrew: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # 4. Install brew cask?
 
 mkdir ~/bin
 
 ###############################################################################
+# Programming languages needed for setup                                      #
+###############################################################################
+
+# nvm, pyenv, and rvm all need to modify the PATH variable. That modification is
+# already present in my relevant dot file.
+
+brew install nvm
+nvm install node
+
+brew install pyenv
+pyenv install 2.7.13
+pyenv install 3.6.1
+echo "3.6.1" > /usr/local/opt/pyenv/version # Set global python version
+
+###############################################################################
 # Brew                                                                        #
 ###############################################################################
+
 # Development
-brew install nvm
-brew install pyenv
 brew install gradle
 brew install maven
 brew install scala
@@ -35,6 +50,7 @@ brew install giflossy
 ###############################################################################
 # Brew Cask                                                                   #
 ###############################################################################
+
 # Browsers
 brew cask install google-chrome
 brew cask install canary
@@ -43,6 +59,9 @@ brew cask install torbrowser
 
 # Development
 brew cask install java
+# MANUAL: dotnet requires soft linking of openssl libraries - https://www.microsoft.com/net/core#macos
+brew cask install dotnet
+brew cask install dotnet-sdk
 brew cask install intellij-idea
 brew cask install datagrip
 brew cask install sqlitebrowser
@@ -62,6 +81,9 @@ brew cask install slack
 brew cask install hopper-disassembler
 brew cask install cheatsheet
 brew cask install virtualbox
+# gcloud relies on python v2. Since we've set python v3 to be global version we might have to
+# create a .python_version file with python v2 in glcoud's directory.
+brew cask install google-cloud-sdk
 
 # Images
 brew cask install imageoptim
@@ -74,8 +96,38 @@ brew cask install spotify
 brew cask install handbrake
 
 ###############################################################################
+# Node Package Manager                                                        #
+###############################################################################
+
+# Perf
+npm install --global lighthouse
+npm install --global psi
+npm install --global pwmetrics
+
+# Tools
+npm install --global browser-sync
+npm install --global browserslist-cli
+npm install --global vorlon
+npm install --global webpack-bundle-analyzer
+npm install --global source-map-explorer
+npm install --global stylelint
+
+# Minification
+npm install --global html-minifier
+npm install --global uglify-js
+npm install --global csso-cli
+
+# Images
+npm install --global imageoptim-cli
+npm install --global svgo
+
+# Various
+npm install --global say
+
+###############################################################################
 # Atom Package Manager                                                        #
 ###############################################################################
+
 apm install file-icons
 apm install atom-beautify
 apm install emmet
@@ -94,17 +146,16 @@ apm install markdown-writer
 ###############################################################################
 # Various                                                                     #
 ###############################################################################
-# gcloud
-curl https://sdk.cloud.google.com | bash
+
 # imgcat
 curl https://raw.githubusercontent.com/gnachman/iTerm2/master/tests/imgcat > ~/bin/imgcat.sh
 chmod 755 ~/bin/imgcat.sh
+
 # dotnet uninstall script
 curl https://github.com/dotnet/cli/blob/rel/1.0.0/scripts/obtain/uninstall/dotnet-uninstall-pkgs.sh > ~/bin/dotnet-uninstall-pkgs.sh
 chmod 755 ~/bin/dotnet-uninstall-pkgs.sh
 
 ###############################################################################
-# Manual install/fiddling required                                            #
+# MANUAL                                                                      #
 ###############################################################################
 # Gapplin - http://gapplin.wolfrosch.com/
-# dotnet requires soft linking of openssl libraries - https://www.microsoft.com/net/core#macos
