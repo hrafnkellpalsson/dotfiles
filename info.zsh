@@ -42,12 +42,13 @@ npm -v
 echo "npm install p --save, npm install p --save-dev, npm list --depth=0, npm update p, npm config list, npm search p"
 printf "========================\n\n"
 
-echo "=====brew or brew cask====="
+echo "===========Brew/Brew Cask==========="
 echo "brew install FORMULA, brew list, brew search FORMULA, brew info FORMULA, brew outdated, brew upgrade FORMULA, brew cleanup FORMULA, brew --cellar"
-printf "Homebrew installs packages to "
+printf "brew installs packages to "
 cellar=$(brew --cellar)
 echo "$cellar and then symlinks from /usr/local/bin to there"
-printf "============================\n\n"
+echo "brew cask install casks to /usr/local/Caskroom and usually moves them to /Applications"
+printf "====================================\n\n"
 
 echo "==========gcloud=========="
 echo "gcloud app browse|create|deploy|describe|open-console"
