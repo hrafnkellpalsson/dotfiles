@@ -29,6 +29,7 @@ echo "3.6.1" > /usr/local/opt/pyenv/version # Set global python version
 ###############################################################################
 
 # Development
+brew install go
 brew install gradle
 brew install maven
 brew install scala
@@ -36,6 +37,8 @@ brew install sbt
 brew install sqlite
 
 # IT
+brew tap GoogleChrome/simplehttp2server https://github.com/GoogleChrome/simplehttp2server
+brew install simplehttp2server
 brew install opensll
 brew install docker
 brew install nmap
@@ -84,6 +87,7 @@ brew cask install virtualbox
 # gcloud relies on python v2. Since we've set python v3 to be global version we might have to
 # create a .python_version file with python v2 in glcoud's directory.
 brew cask install google-cloud-sdk
+brew cask install android-platform-tools
 
 # Images
 brew cask install imageoptim
@@ -94,15 +98,17 @@ brew cask install kap
 brew cask install vlc
 brew cask install spotify
 brew cask install handbrake
+brew cask install spectacle
 
 ###############################################################################
-# Node Package Manager                                                        #
+# Node Packages                                                               #
 ###############################################################################
 
 # Perf
 npm install --global lighthouse
 npm install --global psi
 npm install --global pwmetrics
+npm install -g critical
 
 # Tools
 npm install --global browser-sync
@@ -111,6 +117,7 @@ npm install --global vorlon
 npm install --global webpack-bundle-analyzer
 npm install --global source-map-explorer
 npm install --global stylelint
+npm install -g david
 
 # Minification
 npm install --global html-minifier
@@ -125,7 +132,7 @@ npm install --global svgo
 npm install --global say
 
 ###############################################################################
-# Atom Package Manager                                                        #
+# Atom Packages                                                               #
 ###############################################################################
 
 apm install file-icons
@@ -142,6 +149,7 @@ apm install linter-stylelint
 apm install linter-xo
 apm install markdown-preview-plus
 apm install markdown-writer
+apm install editorconfig
 
 ###############################################################################
 # Various                                                                     #

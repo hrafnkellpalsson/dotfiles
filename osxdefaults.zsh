@@ -1,3 +1,5 @@
+# Stolen from here https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
@@ -9,6 +11,9 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 # Expand print panel by default
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# Disable audio feedback when volume is changed
+defaults write com.apple.sound.beep.feedback -bool false
 
 ###############################################################################
 # Finder                                                                      #
@@ -37,13 +42,10 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 ###############################################################################
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string “$HOME/Desktop”
+defaults write com.apple.screencapture location -string "$HOME/Desktop"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-defaults write com.apple.screencapture type -string “png”
-
-# Disable audio feedback when volume is changed
-defaults write com.apple.sound.beep.feedback -bool false
+defaults write com.apple.screencapture type -string "png"
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #

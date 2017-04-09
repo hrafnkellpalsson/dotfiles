@@ -5,6 +5,8 @@ echo "_path.zsh being loaded"
 export PATH="$HOME/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$SCALA_HOME/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export PATH="/opt/lns:$PATH"
 
