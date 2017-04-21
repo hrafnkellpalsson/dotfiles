@@ -1,5 +1,6 @@
 # The file is named _env.zsh so that it gets loaded first out of all zsh custom
 # files (the custom files are loaded in alphabetical order).
+echo "Loading files from ZSH_CUSTOM=$ZSH_CUSTOM"
 echo "_env.zsh being loaded"
 
 setopt rcquotes

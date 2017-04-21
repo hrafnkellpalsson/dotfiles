@@ -6,65 +6,6 @@ echo "==========Fun=========="
 echo 'say "The ships hung in the sky in much the same way that bricks don''t."'
 printf "======================\n\n"
 
-echo "==========Python=========="
-echo "pyenv x.y.z"
-echo "python"
-echo "pip install|download|uninstall|list|show|search|wheel|help"
-echo "iPython"
-echo "jupyter notebook|run|troubleshoot"
-printf "==========================\n\n"
-
-# echo "==========Ruby=========="
-# ruby -v
-# rvm -v
-# printf "========================\n\n"
-
-# echo "==========Scala=========="
-# scala -version
-# echo "SCALA_HOME=$SCALA_HOME"
-# echo "SBT_OPTS=$SBT_OPTS"
-# printf "=========================\n\n"
-
-echo "==========Java=========="
-javac -version
-java -Xinternalversion
-printf "javap "
-javap -version
-echo "JAVA_HOME=$JAVA_HOME"
-gradle --version | sed -n 3p
-printf "========================\n\n"
-
-echo "==========Node=========="
-printf "Node "
-node -v
-printf "Npm "
-npm -v
-echo "npm install p --save, npm install p --save-dev, npm list --depth=0, npm update p, npm config list, npm search p"
-printf "========================\n\n"
-
-echo "===========Brew/Brew Cask==========="
-echo "brew install FORMULA, brew list, brew search FORMULA, brew info FORMULA, brew outdated, brew upgrade FORMULA, brew cleanup FORMULA, brew --cellar"
-printf "brew installs packages to "
-cellar=$(brew --cellar)
-echo "$cellar and then symlinks from /usr/local/bin to there"
-echo "brew cask install casks to /usr/local/Caskroom and usually moves them to /Applications"
-printf "====================================\n\n"
-
-echo "==========gcloud=========="
-echo "gcloud app browse|create|deploy|describe|open-console"
-echo "gcloud config get-value|list|set|unset"
-echo "gcloud components install|list|reinstall|remove|restore|update"
-echo "gcloud app|auth|components|compute|config|container|dataflow|dataproc|datastore|debug|deployment-manager|dns|iam|kms|ml-engine|organizations|projects|service-management|source|sql|topic [command]"
-printf "========================\n\n"
-
-# echo "==========nginx=========="
-# echo "nginx config is at /usr/local/etc/nginx/nginx.conf"
-# echo "nginx loads files from /usr/local/var/www"
-# echo "nginx logs are at /usr/local/var/log/nginx"
-# echo "brew services start|run|stop nginx, brew services list"
-# echo "nginx -s stop|quit|reload|reopen"
-# printf "=======================\n\n"
-
 echo "=========Image Optimizers========="
 printf "imageOptim "
 imageOptim -v
@@ -109,6 +50,60 @@ echo "simplehttp2server"
 echo "david"
 printf "========================\n\n"
 
+echo "==========Python=========="
+echo "pyenv x.y.z"
+echo "python"
+echo "pip install|download|uninstall|list|show|search|wheel|help"
+echo "iPython"
+echo "jupyter notebook|run|troubleshoot"
+printf "==========================\n\n"
+
+# echo "==========Ruby=========="
+# ruby -v
+# rvm -v
+# printf "========================\n\n"
+
+# echo "==========Scala=========="
+# scala -version
+# echo "SCALA_HOME=$SCALA_HOME"
+# echo "SBT_OPTS=$SBT_OPTS"
+# printf "=========================\n\n"
+
+echo "==========Node=========="
+printf "Node "
+node -v
+printf "Npm "
+npm -v
+echo "npm install p --save, npm install p --save-dev, npm list --depth=0, npm update p, npm config list, npm search p"
+printf "========================\n\n"
+
+echo "===========Brew/Brew Cask==========="
+echo "brew install FORMULA, brew list, brew search FORMULA, brew info FORMULA, brew outdated, brew upgrade FORMULA, brew cleanup FORMULA, brew --cellar"
+printf "brew installs packages to "
+cellar=$(brew --cellar)
+echo "$cellar and then symlinks from /usr/local/bin to there"
+echo "brew cask install casks to /usr/local/Caskroom and usually moves them to /Applications"
+printf "====================================\n\n"
+
+echo "===========SDKMAN!==========="
+echo "sdk list <sdk>"
+printf "====================================\n\n"
+
+echo "==========gcloud=========="
+echo "gcloud app browse|create|deploy|describe|open-console"
+echo "gcloud config get-value|list|set|unset"
+echo "gcloud components install|list|reinstall|remove|restore|update"
+echo "gcloud app|auth|components|compute|config|container|dataflow|dataproc|datastore|debug|deployment-manager|dns|iam|kms|ml-engine|organizations|projects|service-management|source|sql|topic [command]"
+printf "========================\n\n"
+
+# echo "==========nginx=========="
+# echo "nginx config is at /usr/local/etc/nginx/nginx.conf"
+# echo "nginx loads files from /usr/local/var/www"
+# echo "nginx logs are at /usr/local/var/log/nginx"
+# echo "brew services start|run|stop nginx, brew services list"
+# echo "nginx -s stop|quit|reload|reopen"
+# printf "=======================\n\n"
+
 echo "============dotnet============"
 echo "dotnet new|restore|build|publish|run|test|pack|clean|sln|add|remove|list|nuget|msbuild"
 echo "dotnet new console|classlib|mstest|xunit|web|mvc|webapi|sln (run dotnet new -l to see these options)"
@@ -116,6 +111,20 @@ echo "dotnet add package [package-name]"
 echo "dotnet add project [project-name]"
 echo "dotnet watch run"
 printf "==============================\n\n"
+
+echo "==========Java=========="
+javac -version
+printf "java "
+java -Xinternalversion | cut -b 67-79
+printf "javap "
+javap -version
+echo "JAVA_HOME=$JAVA_HOME"
+gradle --version | sed -n 3p
+printf "Gradle distributions are stored here "
+echo $HOME/.gradle/wrapper/dists
+echo "To set up a gradle wrapper for a project run 'gradle wrapper --gradle-version 3.5'"
+echo "Then run gradle tasks on the command line use './gradlew <task>'"
+printf "========================\n\n"
 
 echo "==========Shortcuts=========="
 echo "***echo iTerm2***"
@@ -128,6 +137,11 @@ echo "^+d delete one letter forward"
 echo "^+h delete one letter backward"
 echo "^+j execute command"
 echo "^+l clear screen"
+echo "cmd+d split screen"
 echo "***Chrome DevTools***"
 echo "cmd+o find file"
+echo "***Atom***"
+echo "cmd+k+arrow split screen"
+echo "cmd+k+b toggle files pane"
+echo "cmd+w close tab"
 printf "========================\n\n"

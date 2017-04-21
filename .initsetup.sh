@@ -35,6 +35,7 @@ brew install maven
 brew install scala
 brew install sbt
 brew install sqlite
+brew install leiningen
 
 # IT
 brew tap GoogleChrome/simplehttp2server https://github.com/GoogleChrome/simplehttp2server

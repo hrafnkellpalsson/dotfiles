@@ -92,3 +92,7 @@ DEFAULT_USER='hrafnkellpalsson'
 
 # This source command must be at the end of the file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/hrafnkellpalsson/.sdkman"
+[[ -s "/Users/hrafnkellpalsson/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/hrafnkellpalsson/.sdkman/bin/sdkman-init.sh"
