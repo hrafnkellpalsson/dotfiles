@@ -29,6 +29,7 @@ echo "3.6.1" > /usr/local/opt/pyenv/version # Set global python version
 ###############################################################################
 
 # Development
+brew install git
 brew install go
 brew install gradle
 brew install maven
@@ -89,6 +90,7 @@ brew cask install virtualbox
 # create a .python_version file with python v2 in glcoud's directory.
 brew cask install google-cloud-sdk
 brew cask install android-platform-tools
+brew cask install gitter
 
 # Images
 brew cask install imageoptim

@@ -6,6 +6,11 @@ echo "==========Fun=========="
 echo 'say "The ships hung in the sky in much the same way that bricks don''t."'
 printf "======================\n\n"
 
+echo "==========Git=========="
+git --version
+echo "Global config is at ~/.gitconfig"
+printf "======================\n\n"
+
 echo "=========Image Optimizers========="
 printf "imageOptim "
 imageOptim -v
@@ -122,6 +127,7 @@ echo "JAVA_HOME=$JAVA_HOME"
 gradle --version | sed -n 3p
 printf "Gradle distributions are stored here "
 echo $HOME/.gradle/wrapper/dists
+echo "Run 'gradle --status' to see running gradle daemons."
 echo "To set up a gradle wrapper for a project run 'gradle wrapper --gradle-version 3.5'"
 echo "Then run gradle tasks on the command line use './gradlew <task>'"
 printf "========================\n\n"

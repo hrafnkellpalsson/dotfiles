@@ -4,6 +4,7 @@ alias ll='ls -l'
 
 alias c='cd ~/code'
 alias d='cd ~/Downloads'
+alias y='say "You are technically correct, the best kind of correct"'
 
 alias jc='javac'
 alias j='java'
