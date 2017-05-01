@@ -6,9 +6,10 @@ echo "==========Fun=========="
 echo 'say "The ships hung in the sky in much the same way that bricks don''t."'
 printf "======================\n\n"
 
-echo "==========Git=========="
-git --version
+echo "========Git/Gitup========"
+echo "git clone|checkout|add -u|commit -m|push"
 echo "Global config is at ~/.gitconfig"
+echo "gitup open"
 printf "======================\n\n"
 
 echo "=========Image Optimizers========="
@@ -45,8 +46,7 @@ printf "===============================\n\n"
 
 echo "==========Various=========="
 echo "stylelint \"foo/*.css\" (requires .stylelintrc)"
-echo "gitup open"
-openssl version
+echo "openssl"
 echo "browserslist '>5% in US'"
 echo "browser-sync start --server --files css/*.css (double quotes needed)"
 echo "vorlon"
@@ -54,6 +54,11 @@ echo "python -m http.server 8080"
 echo "simplehttp2server"
 echo "david"
 printf "========================\n\n"
+
+echo "========Groovy/Ruby========"
+echo "groovy | groovysh | sdk list groovy"
+echo "ruby | rvm"
+printf "==========================\n\n"
 
 echo "==========Python=========="
 echo "pyenv x.y.z"
@@ -63,22 +68,14 @@ echo "iPython"
 echo "jupyter notebook|run|troubleshoot"
 printf "==========================\n\n"
 
-# echo "==========Ruby=========="
-# ruby -v
-# rvm -v
-# printf "========================\n\n"
-
 # echo "==========Scala=========="
-# scala -version
+# echo "scala | sbt"
 # echo "SCALA_HOME=$SCALA_HOME"
 # echo "SBT_OPTS=$SBT_OPTS"
 # printf "=========================\n\n"
 
 echo "==========Node=========="
-printf "Node "
-node -v
-printf "Npm "
-npm -v
+echo "Node"
 echo "npm install p --save, npm install p --save-dev, npm list --depth=0, npm update p, npm config list, npm search p"
 printf "========================\n\n"
 
@@ -118,18 +115,20 @@ echo "dotnet watch run"
 printf "==============================\n\n"
 
 echo "==========Java=========="
-javac -version
-printf "java "
-java -Xinternalversion | cut -b 67-79
+# javac -version
+# printf "java "
+# java -Xinternalversion | cut -b 67-79
 printf "javap "
 javap -version
 echo "JAVA_HOME=$JAVA_HOME"
-gradle --version | sed -n 3p
+# gradle --version | sed -n 3p
 printf "Gradle distributions are stored here "
 echo $HOME/.gradle/wrapper/dists
-echo "Run 'gradle --status' to see running gradle daemons."
-echo "To set up a gradle wrapper for a project run 'gradle wrapper --gradle-version 3.5'"
-echo "Then run gradle tasks on the command line use './gradlew <task>'"
+echo "gradle wrapper --gradle-version 3.5 (create wrapper) | gradle --status' (see daemons)"
+echo "gw -w <task> | gw tasks --all | gw <task> --refresh-dependencies | gw -v"
+echo "dependency: dependsOn, finalizedBy | ordering: mustRunAfter, shouldRunAfter"
+echo "typed tasks vs ad-hoc tasks"
+echo "gw dependencies [--configuration <con>] | gw dependencyInsight --dependency <dep>"
 printf "========================\n\n"
 
 echo "==========Shortcuts=========="

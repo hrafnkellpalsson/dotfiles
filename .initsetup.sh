@@ -10,7 +10,7 @@
 mkdir ~/bin
 
 ###############################################################################
-# Programming languages needed for setup                                      #
+# Languages and tools needed for setup                                        #
 ###############################################################################
 
 # nvm, pyenv, and rvm all need to modify the PATH variable. That modification is
@@ -23,6 +23,8 @@ brew install pyenv
 pyenv install 2.7.13
 pyenv install 3.6.1
 echo "3.6.1" > /usr/local/opt/pyenv/version # Set global python version
+
+curl -s "https://get.sdkman.io" | bash
 
 ###############################################################################
 # Brew                                                                        #
@@ -91,6 +93,8 @@ brew cask install virtualbox
 brew cask install google-cloud-sdk
 brew cask install android-platform-tools
 brew cask install gitter
+brew cask install docker
+brew cask install android-studio
 
 # Images
 brew cask install imageoptim
@@ -135,6 +139,11 @@ npm install --global svgo
 npm install --global say
 
 ###############################################################################
+# SDKMAN!                                                                     #
+###############################################################################
+sdk install groovy
+
+###############################################################################
 # Atom Packages                                                               #
 ###############################################################################
 
@@ -153,6 +162,7 @@ apm install linter-xo
 apm install markdown-preview-plus
 apm install markdown-writer
 apm install editorconfig
+apm install language-groovy
 
 ###############################################################################
 # Various                                                                     #

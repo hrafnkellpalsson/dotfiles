@@ -8,9 +8,9 @@ alias y='say "You are technically correct, the best kind of correct"'
 
 alias jc='javac'
 alias j='java'
+alias gw='./gradlew'
 alias pngquant='/usr/local/bin/pngquant'
 alias sqlite='/usr/local/Cellar/sqlite/3.11.0/bin/sqlite3'
-alias imgcat='~/bin/imgcat.bash'
 
 alias a='open -a Atom'
 alias sublime='open -a "Sublime Text"'
