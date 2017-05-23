@@ -124,12 +124,20 @@ echo "JAVA_HOME=$JAVA_HOME"
 # gradle --version | sed -n 3p
 printf "Gradle distributions are stored here "
 echo $HOME/.gradle/wrapper/dists
+echo "gradle init --type basic | java-library | java-application | scala-library"
 echo "gradle wrapper --gradle-version 3.5 (create wrapper) | gradle --status' (see daemons)"
 echo "gw -w <task> | gw tasks --all | gw <task> --refresh-dependencies | gw -v"
 echo "dependency: dependsOn, finalizedBy | ordering: mustRunAfter, shouldRunAfter"
 echo "typed tasks vs ad-hoc tasks"
 echo "gw dependencies [--configuration <con>] | gw dependencyInsight --dependency <dep>"
 printf "========================\n\n"
+
+echo "==========Linux=========="
+echo "lsblk - list block devices"
+echo "file -s /dev/xvdf - check if disk is empty. 'data' indicates it is"
+echo "mkfs -t ext4 /dev/xvdf"
+echo "mount /dev/xvdf path/to/mountpoint"
+printf "=====================\n\n"
 
 echo "==========Shortcuts=========="
 echo "***echo iTerm2***"
