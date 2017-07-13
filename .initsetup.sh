@@ -3,9 +3,10 @@
 ###############################################################################
 # 1. Get rvm at http://rvm.io/
 # 1.a. rvm comes with gem, I think.
-# 2. Use rvm to install Ruby: rvm install ruby 2.3.4
-# 3. Install homebrew: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# 4. Install brew cask?
+# 2. Use rvm to install Ruby: rvm install ruby 2.4.1
+# 3. rvm installs homebrew when installing ruby. If that fails for some reason
+   # homebrew can be installed expliticly using:
+   # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 mkdir ~/bin
 
@@ -16,7 +17,8 @@ mkdir ~/bin
 # nvm, pyenv, and rvm all need to modify the PATH variable. That modification is
 # already present in my relevant dot file.
 
-brew install nvm
+# brew install nvm # brew installation is broken on May 23, 2017
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 nvm install node
 
 brew install pyenv
@@ -61,7 +63,6 @@ brew install giflossy
 
 # Browsers
 brew cask install google-chrome
-brew cask install canary
 brew cask install firefox
 brew cask install torbrowser
 
@@ -116,7 +117,7 @@ brew cask install spectacle
 npm install --global lighthouse
 npm install --global psi
 npm install --global pwmetrics
-npm install -g critical
+npm install --global critical
 
 # Tools
 npm install --global browser-sync
@@ -125,7 +126,11 @@ npm install --global vorlon
 npm install --global webpack-bundle-analyzer
 npm install --global source-map-explorer
 npm install --global stylelint
-npm install -g david
+npm install --global david
+npm install --global live-server
+npm install --global serverless-offline
+npm install --global serverless-plugin-simulate
+npm install --global browserify
 
 # Minification
 npm install --global html-minifier
@@ -140,8 +145,15 @@ npm install --global svgo
 npm install --global say
 
 ###############################################################################
+# Pip                                                                     #
+###############################################################################
+
+pip install awscli
+
+###############################################################################
 # SDKMAN!                                                                     #
 ###############################################################################
+
 sdk install groovy
 
 ###############################################################################
@@ -180,4 +192,5 @@ chmod 755 ~/bin/dotnet-uninstall-pkgs.sh
 ###############################################################################
 # MANUAL                                                                      #
 ###############################################################################
+# Chrome Canary
 # Gapplin - http://gapplin.wolfrosch.com/

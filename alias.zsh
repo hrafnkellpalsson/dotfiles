@@ -3,6 +3,7 @@ echo "alias.zsh being loaded"
 alias ll='ls -l'
 
 alias c='cd ~/code'
+alias m='cd ~/code/maul'
 alias d='cd ~/Downloads'
 alias y='say "You are technically correct, the best kind of correct"'
 
