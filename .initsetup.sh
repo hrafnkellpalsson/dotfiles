@@ -56,6 +56,10 @@ brew install htop
 brew install imagemagick
 brew install pngquant
 brew install giflossy
+brew install webp
+
+# Other
+brew install lynx
 
 ###############################################################################
 # Brew Cask                                                                   #
@@ -97,6 +101,7 @@ brew cask install android-platform-tools
 brew cask install gitter
 brew cask install docker
 brew cask install android-studio
+brew cask install balsamiq-mockups
 
 # Images
 brew cask install imageoptim
@@ -122,6 +127,7 @@ npm install --global critical
 # Tools
 npm install --global browser-sync
 npm install --global browserslist-cli
+npm install --global create-react-app
 npm install --global vorlon
 npm install --global webpack-bundle-analyzer
 npm install --global source-map-explorer
@@ -131,6 +137,7 @@ npm install --global live-server
 npm install --global serverless-offline
 npm install --global serverless-plugin-simulate
 npm install --global browserify
+npm install --global serverless
 
 # Minification
 npm install --global html-minifier
@@ -176,6 +183,9 @@ apm install markdown-preview-plus
 apm install markdown-writer
 apm install editorconfig
 apm install language-groovy
+apm install language-mjml
+apm install linter-mjml
+apm install mjml-preview
 
 ###############################################################################
 # Various                                                                     #
