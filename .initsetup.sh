@@ -102,6 +102,7 @@ brew cask install gitter
 brew cask install docker
 brew cask install android-studio
 brew cask install balsamiq-mockups
+brew cask install discord
 
 # Images
 brew cask install imageoptim
@@ -138,6 +139,8 @@ npm install --global serverless-offline
 npm install --global serverless-plugin-simulate
 npm install --global browserify
 npm install --global serverless
+npm install --global bower
+npm install --global json-server
 
 # Minification
 npm install --global html-minifier

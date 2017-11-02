@@ -162,7 +162,3 @@ echo "Load your app with ?react_perf in the query string (for example, http://lo
 echo "cat test/fixture/index.html | critical --base test/fixture --inline > index.critical.html"
 echo "critical test/fixture/index.html --base test/fixture > critical.css"
 printf "===============================\n\n"
-
-echo "==========Networking=========="
-echo "nc maul.is 80"
-printf "===============================\n\n"

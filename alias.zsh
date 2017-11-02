@@ -6,6 +6,8 @@ alias c='cd ~/code'
 alias m='cd ~/code/maul'
 alias d='cd ~/Downloads'
 alias y='say "You are technically correct, the best kind of correct"'
+alias d='export AWS_PROFILE="default" && export AWS_REGION=eu-west-1'
+alias s='export AWS_PROFILE="serverless" && export AWS_REGION=eu-west-1'
 
 alias jc='javac'
 alias j='java'

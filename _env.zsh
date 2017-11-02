@@ -11,3 +11,4 @@ export NVM_DIR="$HOME/.nvm"
 export GOPATH="$HOME/go"
 export SCALA_HOME=/opt/scala-2.11.7
 export SBT_OPTS=
+export SLS_DEBUG=true
