@@ -14,19 +14,13 @@ mkdir ~/bin
 # Languages and tools needed for setup                                        #
 ###############################################################################
 
-# nvm, pyenv, and rvm all need to modify the PATH variable. That modification is
+# pyenv and rvm all need to modify the PATH variable. That modification is
 # already present in my relevant dot file.
-
-# brew install nvm # brew installation is broken on May 23, 2017
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-nvm install node
 
 brew install pyenv
 pyenv install 2.7.13
-pyenv install 3.6.1
-echo "3.6.1" > /usr/local/opt/pyenv/version # Set global python version
-
-curl -s "https://get.sdkman.io" | bash
+pyenv install 3.6.4
+echo "3.6.4" > /usr/local/opt/pyenv/version # Set global python version
 
 ###############################################################################
 # Brew                                                                        #
@@ -34,9 +28,7 @@ curl -s "https://get.sdkman.io" | bash
 
 # Development
 brew install git
-brew install go
 brew install gradle
-brew install maven
 brew install scala
 brew install sbt
 brew install sqlite
@@ -60,6 +52,7 @@ brew install webp
 
 # Other
 brew install lynx
+brew install fpp
 
 ###############################################################################
 # Brew Cask                                                                   #
@@ -100,14 +93,12 @@ brew cask install google-cloud-sdk
 brew cask install android-platform-tools
 brew cask install gitter
 brew cask install docker
-brew cask install android-studio
 brew cask install balsamiq-mockups
 brew cask install discord
 
 # Images
 brew cask install imageoptim
 brew cask install imagealpha
-brew cask install kap
 
 # Various
 brew cask install vlc
@@ -121,26 +112,19 @@ brew cask install spectacle
 
 # Perf
 npm install --global lighthouse
-npm install --global psi
-npm install --global pwmetrics
-npm install --global critical
 
 # Tools
 npm install --global browser-sync
 npm install --global browserslist-cli
 npm install --global create-react-app
 npm install --global vorlon
-npm install --global webpack-bundle-analyzer
-npm install --global source-map-explorer
 npm install --global stylelint
 npm install --global david
 npm install --global live-server
-npm install --global serverless-offline
 npm install --global serverless-plugin-simulate
-npm install --global browserify
 npm install --global serverless
-npm install --global bower
 npm install --global json-server
+npm install --global artillery
 
 # Minification
 npm install --global html-minifier
@@ -153,18 +137,14 @@ npm install --global svgo
 
 # Various
 npm install --global say
+npm install --global gnomon
+npm install --global shx
 
 ###############################################################################
 # Pip                                                                     #
 ###############################################################################
 
 pip install awscli
-
-###############################################################################
-# SDKMAN!                                                                     #
-###############################################################################
-
-sdk install groovy
 
 ###############################################################################
 # Atom Packages                                                               #
@@ -189,6 +169,7 @@ apm install language-groovy
 apm install language-mjml
 apm install linter-mjml
 apm install mjml-preview
+apm install prettier-atom
 
 ###############################################################################
 # Various                                                                     #

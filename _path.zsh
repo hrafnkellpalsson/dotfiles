@@ -2,6 +2,7 @@
 # files (the custom files are loaded in alphabetical order).
 echo "_path.zsh being loaded"
 
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$SCALA_HOME/bin:$PATH"
