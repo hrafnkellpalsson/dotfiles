@@ -69,7 +69,7 @@ export LANG=en_US.UTF-8
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -96,3 +96,10 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/hrafnkellpalsson/.sdkman"
 [[ -s "/Users/hrafnkellpalsson/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/hrafnkellpalsson/.sdkman/bin/sdkman-init.sh"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/hrafnkellpalsson/code/maul/maul-backend/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/hrafnkellpalsson/code/maul/maul-backend/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/hrafnkellpalsson/code/maul/maul-backend/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/hrafnkellpalsson/code/maul/maul-backend/node_modules/tabtab/.completions/sls.zsh

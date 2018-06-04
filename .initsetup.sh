@@ -105,6 +105,7 @@ brew cask install vlc
 brew cask install spotify
 brew cask install handbrake
 brew cask install spectacle
+brew cask intall signal
 
 ###############################################################################
 # Node Packages                                                               #
