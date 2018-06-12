@@ -166,6 +166,7 @@ echo "You can reference commits by their SHA, by tags, branches, and the special
 echo "git commit --amend"
 echo "git reset <commit> --soft|--mixed|--hard"
 echo "git revert <commit> _creates a new commit_ that is the opposite of whatever commit <commit> was"
+echo "git resert --hard HEAD to discard local changes"
 echo "git checkout <commit> -- <filename> to get file as it was at the given commit"
 echo "git diff"
 echo "git log --oneline --stat"
